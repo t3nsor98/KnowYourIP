@@ -18,7 +18,7 @@ function App() {
         const ip = ipData.ip;
 
         // Fetch IP details from ipstack
-        const url = `http://api.ipstack.com/${ip}?access_key=${accessKey}`;
+        const url = `https://api.ipstack.com/${ip}?access_key=${accessKey}`;
         const locationResponse = await fetch(url);
 
         if (!locationResponse.ok) {
